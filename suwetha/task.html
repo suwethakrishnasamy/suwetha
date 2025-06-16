@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT FORM</title>
+    <style>
+        body{
+        background-color:papayawhip;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin:0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    </style>
+
+</head>
+<body>
+     <form id="form">
+        <h1>STUDENT FORM</h1>
+        <label for="Name">Name:</label>
+        <input id="Name" type="text" placeholder="enter your name"required>
+        <br><br>
+        <label for="Register No">Register No:</label>
+        <input id="Register No" type="Register No"placeholder="enter your register no" required maxlength="12" >
+        <br><br> 
+        <label for="Department">Department:</label>
+        <input id="Department" type="text" placeholder="enter your Department">
+        <br><br>
+        <label for="Email">Email:</label>
+        <input id="Email" type="text" placeholder="enter your email">
+        <br><br>
+        <label for="Interested field">Interested field:</label>
+        <input id="Interested field" type="text" placeholder="enter your field">
+        <br><br>
+        <button type="submit">submit </button>
+        <h1 id="result1" ></h1> 
+        <h1 id="result2"></h1> 
+        <h1 id="result3"></h1>
+        <h1 id="result4"></h1>
+        <h1 id="result5"></h1>
+    </form>
+    <script>
+        document.getElementById("form").addEventListener("submit",function(e)
+        {
+            e.preventDefault();
+            const Name=document.getElementById("Name").value;
+            const Register No =document.getElementById("Register No").value;
+            const Department =document.getElementById("Department").value;
+            const Email =document.getElementById("Email").value;
+            const Interested field =document.getElementById("Interested field").value;
+            console.log(Name,Register No,Department,Email,Interested field)
+            document.getElementById("result1").textcontent=Name
+            document.getElementById("result2").textcontent=Register No
+            document.getElementById("result3").textcontent=Department
+            document.getElementById("result4").textcontent=Email
+            document.getElementById("result5").textcontent=Interested field
+            
+            
+            
+            
+        
+    </script>
+    
+</body>
+</html>
